@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Vivamus Streaming</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="title_activity_purchases">PurchasesActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="appId">813f22ea50924b43ae8488edb975d02c</string>
+    <string name="appCert">980df78128884816b442609b829a7743</string>
+    <string name="token_for_jamesseah">006813f22ea50924b43ae8488edb975d02cIACTVAD6fsOY4yQvFSA3lm4ht07ujbYbWwYQrmKYBrBBG1cjNjcAAAAAEAACj4ioO9YCYwEA6AM71gJj</string>
+    <string name="token_for_amandachong">006813f22ea50924b43ae8488edb975d02cIADiPk4ksTSWqLUb9hUcpSKBRVNuG+80FnqY/bZDYRkM5A0Iz6cAAAAAEAACj4ioUtYCYwEA6ANS1gJj</string>
+    <string name="token_for_johnseah">006813f22ea50924b43ae8488edb975d02cIACt/rhRAjkk5df4hxpU59VFuhyYj0bsbeQ6TTtr0AIpsjiuS5MAAAAAEAAuwe94HiIDYwEA6AMeIgNj</string>
+    <string name="token_for_new_acct"></string>
+    <string name="stream_token">007eJxTYJCVOML6zWSNvdlvnyU86uf/NPvrLIp9LPJrQ4WK9Ye7vd4KDBaGxmlGRqmJpgaWRiZJJsaJqRYmFhapKUmW5qYpBkbJJe4MyR9nMCY/W5bDzMgAgSC+AINHZnpGSGpyhoJ7Ykp6akkxAwMA2rAlCw==</string>
+</resources>

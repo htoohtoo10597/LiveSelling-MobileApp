@@ -1,0 +1,80 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="12dp"
+    android:layout_marginRight="7dp"
+    android:padding="5dp"
+    android:background="@drawable/purchase_row_background"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1.5"
+            android:text="Product Name: " />
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/money"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="0.7" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/product_qty_menu"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/add_product_btn"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:backgroundTint="@color/black"
+            android:text="+"
+            android:textSize="25sp"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/product_qty"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/subtract_product_btn"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:backgroundTint="@color/black"
+            android:text="-"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

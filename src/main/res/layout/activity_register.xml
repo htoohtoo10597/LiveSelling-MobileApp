@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/livestream">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8F000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-93dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp">
+
+
+            <TextView
+                android:id="@+id/reg_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/white"
+                android:hint="Username"
+                android:padding="10dp"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/password"
+                app:layout_constraintTop_toBottomOf="@id/reg_text" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@color/white"
+                android:hint="Password"
+                android:padding="10dp"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/confirm_password"
+                app:layout_constraintTop_toBottomOf="@id/username" />
+
+
+            <EditText
+                android:id="@+id/confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@color/white"
+                android:hint="Confirm password"
+                android:padding="10dp"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/first_name"
+                app:layout_constraintTop_toBottomOf="@id/password" />
+
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@color/white"
+                android:hint="First Name"
+                android:padding="10dp"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/last_name"
+                app:layout_constraintTop_toBottomOf="@id/confirm_password"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@color/white"
+                android:hint="Last Name"
+                android:padding="10dp"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/address"
+                app:layout_constraintTop_toBottomOf="@id/first_name"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@color/white"
+                android:hint="Address"
+                android:padding="10dp"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/checkbox_verify"
+                app:layout_constraintTop_toBottomOf="@id/last_name"
+                tools:layout_editor_absoluteX="-16dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_verify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:gravity="left|center_vertical"
+                android:text="Become a verified user on creation of account"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+                app:layout_constraintTop_toBottomOf="@id/address"
+                tools:ignore="MissingConstraints" />
+            <!--
+            <EditText
+                android:id="@+id/channel_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@color/white"
+                android:hint="Channel Name"
+                android:padding="10dp"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+                app:layout_constraintTop_toBottomOf="@id/address" />
+-->
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/black"
+                android:text="Register"
+                app:layout_constraintBottom_toTopOf="@+id/btnBack"
+                app:layout_constraintTop_toBottomOf="@+id/checkbox_verify"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/black"
+                android:text="Back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnRegister"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
